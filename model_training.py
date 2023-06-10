@@ -59,7 +59,7 @@ kwargs = dict(hist_kws={'alpha':.6}, kde_kws={'linewidth':2})
 plt.figure(figsize=(10,7), dpi= 80)
 xx.plot(kind="bar")
 plt.legend()
-plt.savefig('C:/TLS-Malware-Detection-with-Machine-Learning-master/diagrams/entropy.png')
+plt.savefig('C:/diagrams/entropy.png')
 plt.show()
 
 
@@ -75,7 +75,7 @@ plt.show()
 # plt.xticks(list(range(1, 10)))
 # plt.xlabel('')
 # plt.ylabel('accuracy_score')
-# plt.savefig('C:/TLS-Malware-Detection-with-Machine-Learning-master/diagrams/Допустимость значений Случайного леса.png')
+# plt.savefig('C:/diagrams/Допустимость значений Случайного леса.png')
 # plt.show()
 
 
@@ -101,7 +101,7 @@ plt.title('Матрица несовместимости Случайного л
 plt.xlabel('')
 plt.ylabel('')
 print('Матрица несовместимости для точности набора тестов для  Случайного леса:\n',conf_m)
-plt.savefig('C:/TLS-Malware-Detection-with-Machine-Learning-master/diagrams/Матрица несовместимости Случайного леса.png')
+plt.savefig('C:/diagrams/Матрица несовместимости Случайного леса.png')
 plt.show()
 
 ############################ ЛОГИСТИЧЕСКАЯ РЕГРЕССИЯ  ##############################################################################
@@ -118,7 +118,7 @@ sns.heatmap(conf_m_lr, annot=True) #Вывод схемы несовместим
 plt.title('')
 plt.xlabel('')
 plt.ylabel('')
-plt.savefig('C:/TLS-Malware-Detection-with-Machine-Learning-master/diagrams/Матрица несовместимости ЛР.png')
+plt.savefig('C:/diagrams/Матрица несовместимости ЛР.png')
 plt.show()
 print('accuracy: ', accuracy_score(y_test, predictions))
 print('precision:', precision_score(y_test, predictions))
@@ -222,7 +222,7 @@ def plot_feature_importance(importance,names,model_type):
     plt.title(model_type)
     plt.xlabel('ВАЖНОСТЬ ПРИЗНАКОВ')
     plt.ylabel('НАЗВАНИЯ ПРИЗНАКОВ')
-    plt.savefig('C:/TLS-Malware-Detection-with-Machine-Learning-master/diagrams/ВАЖНОСТЬ_ПРИЗНАКОВ.png')
+    plt.savefig('C:/diagrams/ВАЖНОСТЬ_ПРИЗНАКОВ.png')
 
 plot_feature_importance(rf_clf.feature_importances_,x_train.columns,'СЛУЧАЙНЫЙ ЛЕС')
 
