@@ -4,7 +4,7 @@ import pandas
 import csv
 
 # Пути к файлам и каталогам json-файлов, а также URL-адреса 1 миллиона самых посещаемых сайтов
-benign_url_file = pandas.read_csv("C:/TLS-Malware-Detection-with-Machine-Learning-master/majestic_million.csv")
+benign_url_file = pandas.read_csv("C:/majestic_million.csv")
 # benign_path = "C:/Tls_model/papka_benign/" C:/TLS_Traffic_Classifier/papka_mali/ C:/TLS_Traffic_Classifier/papka_benign/
 # malicious_path = "C:/Tls_model/papka_mali/"
 benign_path = input('Введите путь до файла с доброкачественным трафиком:')
