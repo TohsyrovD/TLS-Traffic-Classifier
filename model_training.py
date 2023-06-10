@@ -196,7 +196,7 @@ plt.xlabel('') # for Xlabel
 plt.ylabel('') # for Ylabel
 plt.legend() # to show legend
 # show scatter plot
-plt.savefig('C:/TLS-Malware-Detection-with-Machine-Learning-master/diagrams/PCA.png')
+plt.savefig('C:/diagrams/PCA.png')
 plt.show()
 
 # Функция для построения графика наиболее важных изспользуемых признаков для классификации
@@ -237,7 +237,7 @@ sns.distplot(x1, color="blue", label="Зловредный", **kwargs, kde=False
 sns.distplot(x2, color="red", label="Нормальный", **kwargs, kde=False)
 
 plt.legend()
-plt.savefig('C:/TLS-Malware-Detection-with-Machine-Learning-master/diagrams/Количество расширений.png')
+plt.savefig('C:/diagrams/Количество расширений.png')
 plt.show()
 
 
@@ -252,7 +252,7 @@ sns.distplot(x1, color="blue", label="Зловредный", **kwargs, kde=False
 sns.distplot(x2, color="red", label="Нормальный", **kwargs, kde=False)
 
 plt.legend()
-plt.savefig('C:/TLS-Malware-Detection-with-Machine-Learning-master/diagrams/Количество Dst_Port.png')
+plt.savefig('C:/diagrams/Количество Dst_Port.png')
 plt.show()
 
 # Построение графика, группированного по исходным портам
@@ -266,7 +266,7 @@ sns.distplot(x1, color="blue", label="Зловредный", **kwargs, kde=False
 sns.distplot(x2, color="red", label="Нормальный", **kwargs, kde=False)
 
 plt.legend()
-plt.savefig('C:/TLS-Malware-Detection-with-Machine-Learning-master/diagrams/График Портов.png')
+plt.savefig('C:/diagrams/График Портов.png')
 plt.show()
 
 
